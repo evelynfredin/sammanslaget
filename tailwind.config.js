@@ -17,6 +17,9 @@ module.exports = {
                 rdgreen: "#009392",
                 rdyellow: "#f6cd2d",
             },
+            backgroundImage: (theme) => ({
+                hero: "url('/Tree_background.png')",
+            }),
         },
     },
     variants: {
