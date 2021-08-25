@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+    font-family: "Lota Grotesque";
+    src: url("/fonts/LotaGrotesque-Regular.woff2") format("woff2"),
+        url("/fonts/LotaGrotesque-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lota Grotesque";
+    src: url("/fonts/LotaGrotesque-Bold.woff2") format("woff2"),
+        url("/fonts/LotaGrotesque-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lota Grotesque";
+    src: url("/fonts/LotaGrotesque-Black.woff2") format("woff2"),
+        url("/fonts/LotaGrotesque-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: black;
+    font-display: swap;
+}
+
+@tailwind utilities;
