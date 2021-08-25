@@ -19,6 +19,7 @@ module.exports = {
             },
             backgroundImage: (theme) => ({
                 hero: "url('/Tree_background.png')",
+                about: "url('/Bench_background.png')",
             }),
         },
     },
