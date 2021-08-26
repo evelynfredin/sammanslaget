@@ -2,22 +2,46 @@ import Link from "next/link";
 import Heading from "../components/Heading";
 import Image from "next/image";
 import Head from "next/head";
+import styles from "../styles/utilities.module.css";
 
 export default function Home() {
     return (
-        <div className="bg-hero h-screen w-screen">
+        <>
             <Head>
                 <title>Home Is Where The Heart Is</title>
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-            <div>
-                <main>
-                    <Heading
-                        title="Home is where the heart is"
-                        description="Det sägs att hemmet är där hjärtat finns. En liten tröst för den som förlorat all trygghet som ett hem innebär. I vår interaktiva upplevelse ställs du inför vissa av de frågor och val som många personer kämpar med varje dag. Har du det som krävs för att klara dig?"
-                        page="/about"
-                        text="Mer om projektet"
-                    />
+            <div className={`${styles.bgcover} bg-hero h-screen w-screen`}>
+                <main className="max-w-screen-2xl mx-auto">
+                    <div>
+                        <Heading
+                            title="Home is where the heart is"
+                            description="Det sägs att hemmet är där hjärtat finns. En liten tröst för den som förlorat all trygghet som ett hem innebär. I vår interaktiva upplevelse ställs du inför vissa av de frågor och val som många personer kämpar med varje dag. Har du det som krävs för att klara dig?"
+                            page="/about"
+                            text="Mer om projektet"
+                        />
+                        <Link href="/about">
+                            <div className="mx-5 md:mx-16">
+                                <a className="transition duration-500 ease-in-out mt-4 hover:underline text-gray-200 text-2xl font-bold inline-flex space-x-2 items-center transform hover:translate-x-4 cursor-pointer">
+                                    <p>Mer om projektet</p>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="h-6 w-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </Link>
+                    </div>
                     <div className="flex justify-center items-center">
                         <Link href="/game">
                             <div className="mt-5 inline-flex justify-center relative h-auto items-center cursor-pointer transition duration-500 ease-in-out transform hover:translate-y-4">
@@ -37,6 +61,6 @@ export default function Home() {
                     </div>
                 </main>
             </div>
-        </div>
+        </>
     );
 }
