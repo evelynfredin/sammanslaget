@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import Heading from "../components/Heading";
+import TeamMember from "../components/TeamMember";
 import styles from "../styles/utilities.module.css";
 
 const about = () => {
@@ -34,10 +35,34 @@ const about = () => {
                             </a>
                         </div>
                     </Link>
-                    <Heading
-                        title="Projektet:"
-                        description="Syftet med vår upplevelse är att knyta an till Räddningsmissionens arbete med hjärterum, ett intiativ som tack vare privatpersoner och fastighetsägares lediga ytor arbetar för att motverka hemlöshet och ge fler en plats att kalla hem."
-                    />
+                    <Heading title="Projektet:" />
+                    <div className="px-5 md:px-0 md:mx-16 my-6 w-full container lg:w-[930px] mt-7 text-gray-50 text-lg">
+                        <p>
+                            Spelet vi spelar och Livet vi lever har många
+                            likheter. Vinnare och förlorare. En början och ett
+                            slut. Vi har tagit osäkerheten, stressen, de
+                            peppande budskapen - och gjort bostadsmarknaden till
+                            ett spel. Gör dina val och se om du klarar dig. Med
+                            dig på resan har du din älskade följeslagare Dante,
+                            som erbjuder dig ovillkorlig kärlek.
+                        </p>
+                        <p className="mt-5">
+                            “Kärleken är större - än vad?” var den filosofiska
+                            fråga vi ställde oss i utvecklandet av det här
+                            projektet. Hur mäter vi kärlek - trygghet -
+                            medmänsklighet? Vad är vikten av ett hem och
+                            betydelsen av skyddsnäten som omger oss i form av
+                            vänskap, familj och relationer. Men också samhället
+                            i stort. Denna upplevelse knyter an till en central
+                            fråga för Räddningsmissionens arbete. Hjärterum -
+                            ett initiativ där privatpersoner och fastighetsägare
+                            kan bidra med lediga ytor för att motverka hemlöshet
+                            och ge fler en plats att kalla hem. Vi hoppas att du
+                            får med dig tanken om vilka alternativ du har om du
+                            är eller hamnar i en situation som den berättelse vi
+                            ger dig med spelet"
+                        </p>
+                    </div>
                     <div className="mx-5 md:mx-16 my-6 transition-all duration-500 ease-in-out transform hover:translate-y-2 hover:shadow-none inline-flex">
                         <a
                             href="#"
@@ -48,11 +73,47 @@ const about = () => {
                     </div>
                 </div>
             </div>
-            <section className="md:mx-16 my-10 mx-5">
-                <div className="max-w-screen-2xl mx-auto">
-                    <h2 className="text-gray-800 font-bold text-3xl">
+            <section className="pb-16 max-w-screen-2xl mx-auto">
+                <div className="px-5 md:px-0 md:mx-16 my-6 w-full mt-7 text-gray-50 text-lg">
+                    <h2 className="text-gray-800 font-bold text-3xl mt-20 mb-10">
                         Om oss:
                     </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-20">
+                        <TeamMember
+                            imgSrc="/oliwer.jpg"
+                            altText="Oliwer Hägglund, Ux Designer"
+                            memberName="Oliwer Hägglund"
+                            occupation="Ux Designer"
+                            description="Som ux-designer i detta projektet ansvarade jag för att idégenereringa samt att överse designprocessen och agera projektledare. Utöver det bistå i att säkerställa användarvänligheten och upplevelsen i projektet."
+                            email="oliwer.123435@gmail.com"
+                        />
+                        <TeamMember
+                            imgSrc="/ida.jpg"
+                            altText="Ida Mikko, Manusförfattare"
+                            memberName="Ida Mikko"
+                            occupation="Manusförfattare"
+                            description="Min roll som manusförfattare har varit att strukturera och skriva berättelsens utformning. I nära samarbete med vår game artist och programmerare har jag jobbat för att få en fint sammanhållen tonalitet och funktion."
+                            email="mikko.ida@gmail.com"
+                            portfolio="https://www.linkedin.com/in/ida-mikko-8653a3153"
+                        />
+                        <TeamMember
+                            imgSrc="/adam.jpg"
+                            altText="Adam Forsell, Game Programmer"
+                            memberName="Adam Forsell"
+                            occupation="Game Programmer"
+                            email="adamforsell2@hotmail.com"
+                            portfolio="https://www.linkedin.com/in/adam-forsell-3037b0a3"
+                        />
+                        <TeamMember
+                            imgSrc="/ev.jpeg"
+                            altText="Evelyn Fredin, Webbutvecklare"
+                            memberName="Evelyn Fredin"
+                            occupation="Webbutvecklare"
+                            description="Tillsammans med mitt team bidrog jag till den konceptuella idén. Designen, utseendet och känslan på webbplatsen samt de tekniska beslut som låg bakom skapandet och deployen av webbplatsen."
+                            email="evelynfredin@gmail.com"
+                            portfolio="https://evelyn.codes"
+                        />
+                    </div>
                 </div>
             </section>
         </>

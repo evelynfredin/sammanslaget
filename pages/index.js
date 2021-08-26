@@ -14,12 +14,15 @@ export default function Home() {
             <div className={`${styles.bgcover} bg-hero h-screen w-screen`}>
                 <main className="max-w-screen-2xl mx-auto">
                     <div>
-                        <Heading
-                            title="Home is where the heart is"
-                            description="Det sägs att hemmet är där hjärtat finns. En liten tröst för den som förlorat all trygghet som ett hem innebär. I vår interaktiva upplevelse ställs du inför vissa av de frågor och val som många personer kämpar med varje dag. Har du det som krävs för att klara dig?"
-                            page="/about"
-                            text="Mer om projektet"
-                        />
+                        <Heading title="Home is where the heart is" />
+                        <p className="px-5 md:px-0 md:mx-16 my-6 w-full container lg:w-[730px] mt-7 text-gray-50 text-lg">
+                            Det sägs att hemmet är där hjärtat finns. En liten
+                            tröst för den som förlorat all trygghet som ett hem
+                            innebär. I vår interaktiva upplevelse ställs du
+                            inför vissa av de frågor och val som många personer
+                            kämpar med varje dag. Har du det som krävs för att
+                            klara dig?
+                        </p>
                         <Link href="/about">
                             <div className="mx-5 md:mx-16">
                                 <a className="transition duration-500 ease-in-out mt-4 hover:underline text-gray-200 text-2xl font-bold inline-flex space-x-2 items-center transform hover:translate-x-4 cursor-pointer">
