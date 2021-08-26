@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
+import Footer from "../components/Footer";
 import Heading from "../components/Heading";
 import TeamMember from "../components/TeamMember";
 import styles from "../styles/utilities.module.css";
@@ -13,7 +15,12 @@ const about = () => {
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <div className={`${styles.bgcover} bg-about w-screen`}>
-                <div className="mx-auto container pb-10 px-5 md:px-0">
+                <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    transition={{ duration: 0.8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mx-auto container pb-10 px-5 md:px-0"
+                >
                     <Link href="/">
                         <div>
                             <a className="transition duration-500 ease-in-out mt-4 hover:underline text-gray-200 text-2xl font-bold inline-flex space-x-2 items-center transform hover:translate-x-4 cursor-pointer">
@@ -65,13 +72,13 @@ const about = () => {
                     </div>
                     <div className="my-6 transition-all duration-500 ease-in-out transform hover:translate-y-2 hover:shadow-none inline-flex">
                         <a
-                            href="#"
+                            href="https://raddningsmissionen.se/hjarterum"
                             className="bg-rdgreen text-gray-50 p-4 rounded-lg shadow-xl hover:bg-[#037b7a]"
                         >
                             Mer om Hjärterum
                         </a>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <section className="mx-auto container px-5 md:px-0">
                 <div>
@@ -116,6 +123,7 @@ const about = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 };

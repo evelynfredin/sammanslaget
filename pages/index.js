@@ -3,6 +3,7 @@ import Heading from "../components/Heading";
 import Image from "next/image";
 import Head from "next/head";
 import styles from "../styles/utilities.module.css";
+import { motion } from "framer-motion";
 
 export default function Home() {
     return (
@@ -13,7 +14,11 @@ export default function Home() {
             </Head>
             <div className={`${styles.bgcover} bg-hero h-screen w-screen`}>
                 <main className="mx-auto container pb-10 px-5 md:px-0">
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, y: -50 }}
+                        transition={{ duration: 0.8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                    >
                         <Heading title="Home is where the heart is" />
                         <p className="my-6 w-full container lg:w-[730px] mt-7 text-gray-50 text-lg">
                             Det sägs att hemmet är där hjärtat finns. En liten
@@ -44,10 +49,15 @@ export default function Home() {
                                 </a>
                             </div>
                         </Link>
-                    </div>
+                    </motion.div>
                     <div className="flex justify-center items-center">
                         <Link href="/game">
-                            <div className="mt-5 inline-flex justify-center relative h-auto items-center cursor-pointer transition duration-500 ease-in-out transform hover:translate-y-4">
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                transition={{ duration: 0.8 }}
+                                animate={{ opacity: 1 }}
+                                className="mt-5 inline-flex justify-center relative h-auto items-center cursor-pointer transition duration-500 ease-in-out transform hover:translate-y-4"
+                            >
                                 <Image
                                     priority
                                     src="/heart.svg"
@@ -59,7 +69,7 @@ export default function Home() {
                                     Starta
                                     <br /> Spelet
                                 </p>
-                            </div>
+                            </motion.div>
                         </Link>
                     </div>
                 </main>

@@ -1,9 +1,21 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import PropTypes from "prop-types";
+import { useInView } from "react-intersection-observer";
 
 const TeamMember = (props) => {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        rootMargin: "-100px 0px",
+    });
+
     return (
-        <div className="flex text-gray-800 space-x-5">
+        <motion.div
+            ref={ref}
+            animate={{ y: inView ? -10 : 50, opacity: inView ? 1 : 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="flex text-gray-800 space-x-5"
+        >
             <div className="w-auto">
                 <Image
                     priority
@@ -22,7 +34,7 @@ const TeamMember = (props) => {
                     <a href={`mailto:${props.email}`}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-rdgreen"
+                            className="h-5 w-5 text-rdgreen transition-all duration-500 ease-in-out transform hover:-translate-y-0.5"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -39,7 +51,7 @@ const TeamMember = (props) => {
                     <a href={props.portfolio}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-rdgreen"
+                            className="h-5 w-5 text-rdgreen transition-all duration-500 ease-in-out transform hover:-translate-y-0.5"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -56,7 +68,7 @@ const TeamMember = (props) => {
                 <hr className="text-gray-300 min-w-full my-3" />
                 <p className="text-base">{props.description}</p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
