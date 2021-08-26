@@ -12,10 +12,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <div className={`${styles.bgcover} bg-hero h-screen w-screen`}>
-                <main className="max-w-screen-2xl mx-auto">
+                <main className="mx-auto container pb-10 px-5 md:px-0">
                     <div>
                         <Heading title="Home is where the heart is" />
-                        <p className="px-5 md:px-0 md:mx-16 my-6 w-full container lg:w-[730px] mt-7 text-gray-50 text-lg">
+                        <p className="my-6 w-full container lg:w-[730px] mt-7 text-gray-50 text-lg">
                             Det sägs att hemmet är där hjärtat finns. En liten
                             tröst för den som förlorat all trygghet som ett hem
                             innebär. I vår interaktiva upplevelse ställs du
@@ -24,7 +24,7 @@ export default function Home() {
                             klara dig?
                         </p>
                         <Link href="/about">
-                            <div className="mx-5 md:mx-16">
+                            <div>
                                 <a className="transition duration-500 ease-in-out mt-4 hover:underline text-gray-200 text-2xl font-bold inline-flex space-x-2 items-center transform hover:translate-x-4 cursor-pointer">
                                     <p>Mer om projektet</p>
                                     <svg

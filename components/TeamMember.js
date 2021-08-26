@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const TeamMember = (props) => {
     return (
-        <div className="flex text-gray-800 gap-5">
+        <div className="flex text-gray-800 space-x-5">
             <div className="w-auto">
                 <Image
                     priority

@@ -13,9 +13,9 @@ const about = () => {
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <div className={`${styles.bgcover} bg-about w-screen`}>
-                <div className="pb-16 max-w-screen-2xl mx-auto">
+                <div className="mx-auto container pb-10 px-5 md:px-0">
                     <Link href="/">
-                        <div className="mx-5 md:mx-16">
+                        <div>
                             <a className="transition duration-500 ease-in-out mt-4 hover:underline text-gray-200 text-2xl font-bold inline-flex space-x-2 items-center transform hover:translate-x-4 cursor-pointer">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const about = () => {
                         </div>
                     </Link>
                     <Heading title="Projektet:" />
-                    <div className="px-5 md:px-0 md:mx-16 my-6 w-full container lg:w-[930px] mt-7 text-gray-50 text-lg">
+                    <div className="my-6 w-full container lg:w-[930px] mt-7 text-gray-50 text-lg">
                         <p>
                             Spelet vi spelar och Livet vi lever har många
                             likheter. Vinnare och förlorare. En början och ett
@@ -63,7 +63,7 @@ const about = () => {
                             ger dig med spelet"
                         </p>
                     </div>
-                    <div className="mx-5 md:mx-16 my-6 transition-all duration-500 ease-in-out transform hover:translate-y-2 hover:shadow-none inline-flex">
+                    <div className="my-6 transition-all duration-500 ease-in-out transform hover:translate-y-2 hover:shadow-none inline-flex">
                         <a
                             href="#"
                             className="bg-rdgreen text-gray-50 p-4 rounded-lg shadow-xl hover:bg-[#037b7a]"
@@ -73,12 +73,12 @@ const about = () => {
                     </div>
                 </div>
             </div>
-            <section className="pb-16 max-w-screen-2xl mx-auto">
-                <div className="px-5 md:px-0 md:mx-16 my-6 w-full mt-7 text-gray-50 text-lg">
+            <section className="mx-auto container px-5 md:px-0">
+                <div>
                     <h2 className="text-gray-800 font-bold text-3xl mt-20 mb-10">
                         Om oss:
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 gap-y-20">
                         <TeamMember
                             imgSrc="/oliwer.jpg"
                             altText="Oliwer Hägglund, Ux Designer"
