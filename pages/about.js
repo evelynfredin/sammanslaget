@@ -11,7 +11,7 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>Projektet | Home Is Where The Heart Is</title>
+                <title>Projektet | Vrå</title>
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <div className={`${styles.bgcover} bg-about w-screen`}>
@@ -67,7 +67,7 @@ const about = () => {
                             och ge fler en plats att kalla hem. Vi hoppas att du
                             får med dig tanken om vilka alternativ du har om du
                             är eller hamnar i en situation som den berättelse vi
-                            ger dig med spelet"
+                            ger dig med spelet.
                         </p>
                     </div>
                     <div className="flex space-x-3">

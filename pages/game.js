@@ -24,7 +24,7 @@ export default function Game() {
     return (
         <>
             <Head>
-                <title>Spela | Home Is Where The Heart Is</title>
+                <title>Spela | Vrå</title>
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <div className="relative">
