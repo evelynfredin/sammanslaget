@@ -18,8 +18,8 @@ module.exports = {
                 rdyellow: "#f6cd2d",
             },
             backgroundImage: (theme) => ({
-                hero: "url('/Tree_background.png')",
-                about: "url('/Bench_background.png')",
+                hero: "url('/bg/Tree_background.png')",
+                about: "url('/bg/Bench_background.png')",
             }),
         },
     },

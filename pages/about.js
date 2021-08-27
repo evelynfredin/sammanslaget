@@ -42,7 +42,7 @@ const about = () => {
                             </a>
                         </div>
                     </Link>
-                    <Heading title="Projektet:" />
+                    <Heading title="Projektet" />
                     <div className="my-6 w-full container lg:w-[930px] mt-7 text-gray-50 text-lg">
                         <p>
                             Spelet vi spelar och Livet vi lever har många
@@ -93,11 +93,11 @@ const about = () => {
             <section className="mx-auto container px-5 md:px-0">
                 <div>
                     <h2 className="text-gray-800 font-bold text-3xl mt-20 mb-10">
-                        Om oss:
+                        Vårt team
                     </h2>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 gap-y-20">
                         <TeamMember
-                            imgSrc="/oliwer.jpg"
+                            imgSrc="/team/oliwer.jpg"
                             altText="Oliwer Hägglund, Ux Designer"
                             memberName="Oliwer Hägglund"
                             occupation="Ux Designer"
@@ -105,7 +105,7 @@ const about = () => {
                             email="oliwer.123435@gmail.com"
                         />
                         <TeamMember
-                            imgSrc="/ida.jpg"
+                            imgSrc="/team/ida.jpg"
                             altText="Ida Mikko, Manusförfattare"
                             memberName="Ida Mikko"
                             occupation="Manusförfattare"
@@ -114,7 +114,7 @@ const about = () => {
                             portfolio="https://www.linkedin.com/in/ida-mikko-8653a3153"
                         />
                         <TeamMember
-                            imgSrc="/adam.jpg"
+                            imgSrc="/team/adam.jpg"
                             altText="Adam Forsell, Game Programmer"
                             memberName="Adam Forsell"
                             occupation="Game Programmer"
@@ -122,7 +122,16 @@ const about = () => {
                             portfolio="https://www.linkedin.com/in/adam-forsell-3037b0a3"
                         />
                         <TeamMember
-                            imgSrc="/ev.jpeg"
+                            imgSrc="/team/bella.jpg"
+                            altText="Isabelle Eriksson Koski, Game Artist"
+                            memberName="Isabelle Eriksson Koski"
+                            occupation="Game Artist"
+                            description="Som game artist ansvarade jag för den grafiska profilen inom applikationen, samt tillhörande animationer. Tillsammans med teamet bidrog jag till den konceptuella idén, och hur den skulle kunna återspeglas visuellt inom spelet."
+                            email="isabelle.koski@hotmail.com"
+                            portfolio="https://www.artstation.com/excalis"
+                        />
+                        <TeamMember
+                            imgSrc="/team/ev.jpeg"
                             altText="Evelyn Fredin, Webbutvecklare"
                             memberName="Evelyn Fredin"
                             occupation="Webbutvecklare"
