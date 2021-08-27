@@ -13,6 +13,10 @@ const about = () => {
             <Head>
                 <title>Projektet | Vrå</title>
                 <link rel="icon" href="/favicon.svg" />
+                <meta
+                    name="description"
+                    content="Det sägs att hemmet är där hjärtat finns. En liten tröst för den som förlorat all trygghet som ett hem innebär. I vår interaktiva upplevelse ställs du inför vissa av de frågor och val som många personer kämpar med varje dag. Har du det som krävs för att klara dig?"
+                ></meta>
             </Head>
             <div className={`${styles.bgcover} bg-about w-screen`}>
                 <motion.div
@@ -46,28 +50,25 @@ const about = () => {
                     <div className="my-6 w-full container lg:w-[930px] mt-7 text-gray-50 text-lg">
                         <p>
                             Spelet vi spelar och Livet vi lever har många
-                            likheter. Vinnare och förlorare. En början och ett
-                            slut. Vi har tagit osäkerheten, stressen, de
+                            likheter. Vi har tagit osäkerheten, stressen, de
                             peppande budskapen - och gjort bostadsmarknaden till
-                            ett spel. Gör dina val och se om du klarar dig. Med
-                            dig på resan har du din älskade följeslagare Dante,
-                            som erbjuder dig ovillkorlig kärlek.
+                            ett spel. Med dig på resan har du din älskade hund
+                            Dante, som erbjuder dig ovillkorlig kärlek. Gör dina
+                            val och se om du klarar dig.
                         </p>
                         <p className="mt-5">
                             “Kärleken är större - än vad?” var den filosofiska
                             fråga vi ställde oss i utvecklandet av det här
                             projektet. Hur mäter vi kärlek - trygghet -
                             medmänsklighet? Vad är vikten av ett hem och
-                            betydelsen av skyddsnäten som omger oss i form av
-                            vänskap, familj och relationer. Men också samhället
-                            i stort. Denna upplevelse knyter an till en central
-                            fråga för Räddningsmissionens arbete. Hjärterum -
-                            ett initiativ där privatpersoner och fastighetsägare
-                            kan bidra med lediga ytor för att motverka hemlöshet
-                            och ge fler en plats att kalla hem. Vi hoppas att du
-                            får med dig tanken om vilka alternativ du har om du
-                            är eller hamnar i en situation som den berättelse vi
-                            ger dig med spelet.
+                            skyddsnäten som omger oss. Upplevelsen inspirerades
+                            vi av Räddningsmissionens projektet Hjärterum - ett
+                            initiativ där privatpersoner och fastighetsägare kan
+                            bidra med lediga ytor för att motverka hemlöshet och
+                            ge fler en plats att kalla hem. Vi hoppas att du får
+                            med dig tanken om vilka alternativ du har om du är,
+                            eller hamnar, i en situation som den berättelse vi
+                            ger dig med spelet VRÅ.
                         </p>
                     </div>
                     <div className="flex space-x-3">

@@ -26,6 +26,10 @@ export default function Game() {
             <Head>
                 <title>Spela | Vrå</title>
                 <link rel="icon" href="/favicon.svg" />
+                <meta
+                    name="description"
+                    content="Det sägs att hemmet är där hjärtat finns. En liten tröst för den som förlorat all trygghet som ett hem innebär. I vår interaktiva upplevelse ställs du inför vissa av de frågor och val som många personer kämpar med varje dag. Har du det som krävs för att klara dig?"
+                ></meta>
             </Head>
             <div className="relative">
                 <Link href="/">
