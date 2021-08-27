@@ -116,9 +116,10 @@ const about = () => {
                         />
                         <TeamMember
                             imgSrc="/team/adam.jpg"
-                            altText="Adam Forsell, Game Programmer"
+                            altText="Adam Forsell, Spelutvecklare"
                             memberName="Adam Forsell"
-                            occupation="Game Programmer"
+                            occupation="Spelutvecklare"
+                            description="Min uppgift som spelutvecklare har inneburit att bygga den digitala upplevelsen - dvs skapa systemet som gör att man kan interagera med saker och ting, och sammanfoga allt som mina kollegor bidragit med."
                             email="adamforsell2@hotmail.com"
                             portfolio="https://www.linkedin.com/in/adam-forsell-3037b0a3"
                         />
