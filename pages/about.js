@@ -70,13 +70,23 @@ const about = () => {
                             ger dig med spelet"
                         </p>
                     </div>
-                    <div className="my-6 transition-all duration-500 ease-in-out transform hover:translate-y-2 hover:shadow-none inline-flex">
-                        <a
-                            href="https://raddningsmissionen.se/hjarterum"
-                            className="bg-rdgreen text-gray-50 p-4 rounded-lg shadow-xl hover:bg-[#037b7a]"
-                        >
-                            Mer om Hjärterum
-                        </a>
+                    <div className="flex space-x-3">
+                        <div className="my-6 transition-all duration-500 ease-in-out transform hover:translate-y-2 hover:shadow-none inline-flex">
+                            <a
+                                href="https://raddningsmissionen.se/hjarterum"
+                                className="bg-rdgreen text-gray-50 p-4 rounded-lg shadow-xl hover:bg-[#037b7a]"
+                            >
+                                Mer om Hjärterum
+                            </a>
+                        </div>
+                        <div className="my-6 transition-all duration-500 ease-in-out transform hover:translate-y-2 hover:shadow-none inline-flex">
+                            <a
+                                href="https://raddningsmissionen.se/engagera-dig"
+                                className="bg-rdyellow text-gray-700 p-4 rounded-lg shadow-xl hover:bg-[#cca818]"
+                            >
+                                Engagera dig!
+                            </a>
+                        </div>
                     </div>
                 </motion.div>
             </div>
