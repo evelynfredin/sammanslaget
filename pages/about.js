@@ -102,7 +102,7 @@ const about = () => {
                             altText="Oliwer Hägglund, Ux Designer"
                             memberName="Oliwer Hägglund"
                             occupation="Ux Designer"
-                            description="Som ux-designer i detta projektet ansvarade jag för att idégenereringa samt att överse designprocessen och agera projektledare. Utöver det bistå i att säkerställa användarvänligheten och upplevelsen i projektet."
+                            description="Som ux-designer ansvarade jag för att idégenerera fram konceptet, samt överse designprocessen som projektledare. Utöver det höll jag i användartester och fokuserade på att  säkerställa användarvänligheten och upplevelsen i spelet och på hemsidan."
                             email="oliwer.123435@gmail.com"
                         />
                         <TeamMember
