@@ -58,14 +58,25 @@ export default function Home() {
                                 animate={{ opacity: 1 }}
                                 className="mt-5 inline-flex justify-center relative h-auto items-center cursor-pointer transition duration-500 ease-in-out transform hover:translate-y-4"
                             >
-                                <Image
-                                    priority
-                                    src="/heart.svg"
-                                    height={174}
-                                    width={174}
-                                    alt="Heart"
-                                    aria-label="Starta Spelet"
-                                />
+                                <motion.div
+                                    animate={{
+                                        scale: [1.2, 1, 1.2],
+                                        transition: {
+                                            duration: 1.5,
+                                            repeat: "Infinity",
+                                            repeatType: "loop",
+                                        },
+                                    }}
+                                >
+                                    <Image
+                                        priority
+                                        src="/heart.svg"
+                                        height={174}
+                                        width={174}
+                                        alt="Heart"
+                                        aria-label="Starta Spelet"
+                                    />
+                                </motion.div>
                                 <p className="absolute text-green-50 text-2xl">
                                     Starta
                                     <br /> Spelet
