@@ -62,7 +62,7 @@ const about = () => {
                             projektet. Hur mäter vi kärlek - trygghet -
                             medmänsklighet? Vad är vikten av ett hem och
                             skyddsnäten som omger oss. Upplevelsen inspirerades
-                            vi av Räddningsmissionens projektet Hjärterum - ett
+                            av Räddningsmissionens projektet Hjärterum - ett
                             initiativ där privatpersoner och fastighetsägare kan
                             bidra med lediga ytor för att motverka hemlöshet och
                             ge fler en plats att kalla hem. Vi hoppas att du får
