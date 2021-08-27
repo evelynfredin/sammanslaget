@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Home Is Where The Heart Is</title>
+                <title>Vrå</title>
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <div className={`${styles.bgcover} bg-hero h-screen w-screen`}>
@@ -19,7 +19,7 @@ export default function Home() {
                         transition={{ duration: 0.8 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
-                        <Heading title="Home is where the heart is" />
+                        <Heading title="Vrå" />
                         <p className="my-6 w-full container lg:w-[730px] mt-7 text-gray-50 text-lg">
                             Det sägs att hemmet är där hjärtat finns. En liten
                             tröst för den som förlorat all trygghet som ett hem
