@@ -64,6 +64,7 @@ export default function Home() {
                                     height={174}
                                     width={174}
                                     alt="Heart"
+                                    aria-label="Starta Spelet"
                                 />
                                 <p className="absolute text-green-50 text-2xl">
                                     Starta

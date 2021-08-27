@@ -10,7 +10,7 @@ const Loading = ({ setLoading }) => {
             onAnimationComplete={() => setLoading(false)}
         >
             <div
-                className={`${styles.bgcover} bg-hero h-screen w-screen flex justify-center items-center`}
+                className={`${styles.bgcover} absolute inset-0 flex bg-hero h-screen w-screen justify-center items-center`}
             >
                 <motion.h3
                     initial={{ opacity: 0, y: -50 }}
